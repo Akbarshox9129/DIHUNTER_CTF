@@ -1,0 +1,2 @@
+Siz Bu bosqichda oldindan tayyorlab qo'yilgan mana shu platformadagi admin nomli default userni parolini topib tizimga buzib kirishingiz kerak.Va bunda sizga yordam sifatida aytishimiz mumkinki admin paroli siz-u bizga mashhur
+bo'lgan rockyou.txt da mavjud 

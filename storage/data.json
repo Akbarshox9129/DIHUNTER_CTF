@@ -1,0 +1,77 @@
+{
+    "Sher": {
+        "score": 0,
+        "stage": 1
+    },
+    "admin": {
+        "password": "a994696540befd55c96017a162c7ae2685f2010a7fd3224c0ada25241913933b",
+        "score": 0,
+        "stage": 11,
+        "attempts": {
+            "7": 3,
+            "10": 1
+        },
+        "last_action": "2025-06-13 03:57:55.649743"
+    },
+    "kalilinux": {
+        "password": "a994696540befd55c96017a162c7ae2685f2010a7fd3224c0ada25241913933b",
+        "score": 20,
+        "stage": 11,
+        "attempts": {
+            "1": 5,
+            "2": 1,
+            "3": 1,
+            "10": 23,
+            "7": 15
+        },
+        "last_action": "2025-06-13 12:06:27.398750"
+    },
+    "Aza": {
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "score": 20,
+        "stage": 3,
+        "attempts": {
+            "1": 6,
+            "2": 2
+        },
+        "correct_flags": 1,
+        "last_action": "2025-06-11 12:15:37.881312"
+    },
+    "ad": {
+        "password": "811786ad1ae74adfdd20dd0372abaaebc6246e343aebd01da0bfc4c02bf0106c",
+        "score": 0,
+        "stage": 1,
+        "attempts": {},
+        "correct_flags": 0
+    },
+    "Asad": {
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "score": 0,
+        "stage": 2,
+        "attempts": {
+            "1": 1
+        },
+        "last_action": "2025-06-11 11:35:21.184044"
+    },
+    "kali": {
+        "password": "fc5669b52ce4e283ad1d5d182de88ff9faec6672bace84ac2ce4c083f54fe2bc",
+        "score": 0,
+        "stage": 1,
+        "attempts": {
+            "1": 2
+        },
+        "correct_flags": 0,
+        "last_action": "2025-06-11 11:57:40.184073"
+    },
+    "Alisher": {
+        "password": "02023546b4039abe3b9f355c23dafd9119570f301a024e2fd2ff3186ae54060c",
+        "score": 0,
+        "stage": 5,
+        "attempts": {
+            "3": 3,
+            "4": 1
+        },
+        "correct_flags": 0,
+        "last_action": "2025-06-11 12:56:54.960600"
+    }
+}
