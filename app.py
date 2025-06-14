@@ -1,4 +1,3 @@
-𝙰𝚡1.𝚘𝚏, [14.06.2025 16:42]
 from flask import Flask, render_template, request, redirect, url_for, session, flash, jsonify
 import json, os, hashlib, datetime
 
@@ -123,9 +122,7 @@ def ctf_stage(num):
             return redirect(url_for("ctf_stage", num=str(user["stage"])))
 
         save_data(data)
-
-𝙰𝚡1.𝚘𝚏, [14.06.2025 16:42]
-return render_template(f"stage{num}.html", num=num)
+    return render_template(f"stage{num}.html", num=num)
 
 @app.route("/stage/7", methods=["GET", "POST"])
 def ctf_stage_7():
