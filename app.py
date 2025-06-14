@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request, redirect, url_for, session, flash
+𝙰𝚡1.𝚘𝚏, [14.06.2025 16:42]
+from flask import Flask, render_template, request, redirect, url_for, session, flash, jsonify
 import json, os, hashlib, datetime
 
-app = Flask(__name__)
+app = Flask(name)
 app.secret_key = "supersecret"
 
 DATA_FILE = os.path.join("storage", "data.json")
@@ -10,7 +11,7 @@ STAGES_DIR = os.path.join("storage", "stages")
 os.makedirs(LOG_DIR, exist_ok=True)
 os.makedirs(STAGES_DIR, exist_ok=True)
 
-admin_password = "454545"
+admin_password = "454545!@#"
 
 def load_data():
     if os.path.exists(DATA_FILE):
@@ -123,7 +124,9 @@ def ctf_stage(num):
 
         save_data(data)
 
-    return render_template(f"stage{num}.html", num=num)
+𝙰𝚡1.𝚘𝚏, [14.06.2025 16:42]
+return render_template(f"stage{num}.html", num=num)
+
 @app.route("/stage/7", methods=["GET", "POST"])
 def ctf_stage_7():
     if "username" not in session:
@@ -143,7 +146,7 @@ def ctf_stage_7():
 
         if action == "submit_flag":
             submitted_pass = request.form.get("flag_input", "").strip()
-            correct_password = "secret"  # ✅ Parol shu faylda yashiringan bo'ladi
+            correct_password = "secret"
             save_stage_submission(username, "7", submitted_pass)
 
             log_file = os.path.join(LOG_DIR, "stage7_submissions.txt")
@@ -190,6 +193,18 @@ def admin_dashboard():
     data = load_data()
     return render_template("admin.html", data=data)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80, debug=True)
+# 🔁 AJAX uchun flag loglarini yuboruvchi route
+@app.route("/admin/submissions")
+def admin_submissions():
+    if not session.get("admin"):
+        return "No access", 403
 
+    submissions = {}
+    for file in os.listdir(LOG_DIR):
+        if file.endswith(".txt"):
+            with open(os.path.join(LOG_DIR, file), "r", encoding="utf-8") as f:
+                submissions[file] = f.readlines()
+    return jsonify(submissions)
+
+if name == "main":
+    app.run(host="0.0.0.0", port=80, debug=True)
